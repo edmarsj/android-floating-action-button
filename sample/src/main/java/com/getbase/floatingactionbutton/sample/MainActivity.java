@@ -45,6 +45,10 @@ public class MainActivity extends Activity {
     final FloatingActionsMenu menuMultipleActions = (FloatingActionsMenu) findViewById(R.id.multiple_actions);
     menuMultipleActions.addButton(actionC);
 
+
+    menuMultipleActions.getTriggerButton().setIcon(R.drawable.icon_nav_hot_videos);
+    menuMultipleActions.setAllowRotation(false);
+
     final FloatingActionButton removeAction = (FloatingActionButton) findViewById(R.id.button_remove);
     removeAction.setOnClickListener(new OnClickListener() {
       @Override
